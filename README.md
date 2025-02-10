@@ -1,4 +1,4 @@
-**Pizza Hut Sales Analysis Project **
+## Pizza Hut Sales Analysis Project 🍕📊
 
 Welcome to the Pizza Hut Sales Analysis project! This repository contains an SQL-based analysis of sales data from Pizza Hut stores. The goal is to explore and derive insights from the data to better understand sales trends, customer preferences, and store performance.
 
@@ -7,15 +7,15 @@ This project focuses on analyzing sales data using SQL to uncover meaningful ins
 
 **1. Data Collection**
 •	The raw sales data was sourced from various channels, including databases, CSV files, or other storage systems. The dataset includes details such as customer orders, product information, order dates, and transaction amounts.
-**
-**3. Data Preparation and Transformation****
+
+**2. Data Preparation and Transformation****
 •	Using SQL, the raw data was cleaned, filtered, and transformed into a structured format suitable for analysis. Key tasks included:
 o	Joining multiple tables to consolidate relevant information.
 o	Handling missing or inconsistent data.
 o	Creating calculated fields (e.g., total order value, discounts, etc.).
 o	Aggregating data for summary statistics.
 
-**4. Data Analysis**
+**3. Data Analysis**
 •	SQL queries were written to perform a comprehensive analysis of the data. Key areas of exploration include:
 o	Top-Selling Pizzas: Identifying the most popular pizza flavors and categories.
 o	Sales Trends: Analyzing sales patterns over time (daily, weekly, monthly, or yearly).
