@@ -10,15 +10,16 @@ select count(distinct order_id) as "Total_Orders" from orders;
 -- Calculate the total revenue generated from pizza sales
  
  select cast(sum(order_details.quantity * pizzas.price) as decimal(8,2) ) as "Total_Revenue"
- from  order_details
- join pizzas
- on order_details.pizza_id = pizzas.pizza_id;
+ 	from  order_details
+ 		join pizzas
+ 		on order_details.pizza_id = pizzas.pizza_id;
  
  -- Identify the highest-priced pizza.
  select pizza_types.name as 'Top_pizza_Name'
- from pizzas
- join pizza_types
- on pizza_types.pizza_type_id =pizzas.pizza_type_id
+ 	from pizzas
+ 	join 
+	 pizza_types
+ 	on pizza_types.pizza_type_id =pizzas.pizza_type_id
  order by pizzas.price desc
  limit 1;
  
@@ -102,7 +103,7 @@ from
  -----------------------------------------------------
  
  
-	-- number of of orders with quantity per day
+-- the number of of orders with quantity per day
     select orders.date as 'Order_Date',
     -- sum(order_details.quantity ) as 'Quantity_order', 
     count( orders.order_id) as 'Order_Count'
@@ -137,7 +138,7 @@ from
         -- Determine the top 3 most ordered pizza types based on revenue.
         select cast(sum(order_details.quantity * pizzas.price) as decimal(8,2) ) as "Total_Revenue",
         pizzas.pizza_type_id as 'Pizza_Type'
-        from 
+        	from 
 			order_details
 				join 
 			pizzas
@@ -197,6 +198,12 @@ GROUP BY
     orders.date
 ORDER BY 
     orders.date;
+
+-------------------------------------------------------------
+
+-- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+
+
 
   
   
